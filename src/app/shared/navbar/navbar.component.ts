@@ -25,10 +25,10 @@ export class NavbarComponent implements OnInit {
     });
   }
 
-  public scrollIndicate(): void {
+  public (): void {
     this.pageScrollService.scroll({
       document: this.document,
-      scrollTarget: '.scrollIndicate'
+      scrollTarget: '.'
     });
   }
 
