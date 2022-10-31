@@ -19,6 +19,10 @@ import { CardInfoComponent } from './landing-page/card-info/card-info.component'
 import { ImportantImageComponent } from './landing-page/important-image/important-image.component';
 import { GalleryViewComponent } from './landing-page/gallery-view/gallery-view.component';
 import { WhyPhotographComponent } from './landing-page/why-photograph/why-photograph.component';
+import { UserService } from './services/user.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 @NgModule({
   declarations: [
@@ -38,14 +42,19 @@ import { WhyPhotographComponent } from './landing-page/why-photograph/why-photog
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     SwiperModule,
     FormsModule,
     ReactiveFormsModule,
     NgxMaskModule.forRoot(),
+    ToastrModule.forRoot(),
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    UserService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
