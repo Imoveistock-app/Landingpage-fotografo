@@ -494,6 +494,9 @@ input:focus {
 @media (max-width: 991px) {
 
     // tools
+    .swiper-button-prev, .swiper-button-next {
+        display: none !important;
+    }
     .col-lg-12{
         padding-right: 0px;
         padding-left: 0px;
@@ -519,6 +522,7 @@ input:focus {
 
     .card-photo {
         width: 100%;
+        margin-left: 0 !important;
         margin-bottom: 1rem;
         height: 315px;
     }
@@ -536,7 +540,6 @@ input:focus {
     }
 
  
-
     .col-camera-men {
         padding: 1rem 0rem;
     }
@@ -612,13 +615,16 @@ input:focus {
         height: 0;
     }
     .img-sub-with-us{
-    display: block !important;
-    
-    margin-bottom: 200px;
-
+        display: block !important;
+        margin-bottom: 200px;
     }
 
-
+    .block-blue{
+        max-width: 367px;
+        margin-top: 11%;
+        height: 214px;
+        background-color: #542FDF;
+    }
 
     .img-partner-desktop {
         display: none !important;
@@ -653,7 +659,7 @@ input:focus {
         background-position: center !important;
         background-repeat: no-repeat !important;
         background-size: cover !important;
-        min-height: 25vh !important;
+        min-height: 33vh !important;
         width: 100% !important;
     }
     .why-photograph-text{
