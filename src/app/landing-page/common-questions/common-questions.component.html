@@ -1,79 +1,99 @@
 <section class="container-fluid bg-commom-question">
-    <div class="row d-flex justify-content-center">
-        <div class="col-md-8">
-            <h2 class="text-white text-center">Perguntas frequentes</h2>
-            <div class="d-flex align-items-center justify-content-between px-3 mt-5 pt-4">
-                <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <img *ngIf="!question1" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(1)">
-                <img *ngIf="question1" src="../../../assets/icons/times.svg" class="animate__animated animate__rotateIn" height="18" style="cursor: pointer;"
-                    (click)="openQuestion(1)">
-            </div>
-            <div *ngIf="question1" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit quibusdam
-                    nostrum inventore ratione optio nihil debitis</p>
-            </div>
-            <div class="div-line-common-question"></div>
-            <div class="d-flex align-items-center justify-content-between px-3 mt-5">
-                <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <img *ngIf="!question2" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(2)">
-                <img *ngIf="question2" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(2)">
-            </div>
-            <div *ngIf="question2" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit quibusdam
-                    nostrum inventore ratione optio nihil debitis</p>
-            </div>
-            <div class="div-line-common-question"></div>
-            <div class="d-flex align-items-center justify-content-between px-3 mt-5">
-                <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <img *ngIf="!question3" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(3)">
-                <img *ngIf="question3" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(3)">
-            </div>
-            <div *ngIf="question3" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit quibusdam
-                    nostrum inventore ratione optio nihil debitis</p>
-            </div>
-            <div class="div-line-common-question"></div>
-            <div class="d-flex align-items-center justify-content-between px-3 mt-5">
-                <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <img *ngIf="!question4" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(4)">
-                <img *ngIf="question4" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(4)">
-            </div>
-            <div *ngIf="question4" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit quibusdam
-                    nostrum inventore ratione optio nihil debitis</p>
-            </div>
-            <div class="div-line-common-question"></div>
-            <div class="d-flex align-items-center justify-content-between px-3 mt-5">
-                <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <img *ngIf="!question5" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(5)">
-                <img *ngIf="question5" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(5)">
-            </div>
-            <div *ngIf="question5" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit quibusdam
-                    nostrum inventore ratione optio nihil debitis</p>
-            </div>
-            <div class="div-line-common-question"></div>
-            <div class="d-flex align-items-center justify-content-between px-3 mt-5">
-                <span class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
-                <img *ngIf="!question6" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(6)">
-                <img *ngIf="question6" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
-                    (click)="openQuestion(6)">
-            </div>
-            <div *ngIf="question6" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
-                <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugit quibusdam
-                    nostrum inventore ratione optio nihil debitis</p>
-            </div>
-            <div class="div-line-common-question"></div>
-        </div>
+  <div class="row d-flex justify-content-center">
+    <div class="col-md-8">
+      <h2 class="text-white text-center">Perguntas frequentes</h2>
+      <div class="d-flex align-items-center justify-content-between px-3 mt-5 pt-4">
+        <span class="text-white">Receba sua agenda pelo aplicativo todos os dias:</span>
+        <img *ngIf="!question1" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(1)">
+        <img *ngIf="question1" src="../../../assets/icons/times.svg" class="animate__animated animate__rotateIn" height="18" style="cursor: pointer;"
+             (click)="openQuestion(1)">
+      </div>
+      <div *ngIf="question1" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
+        <li>
+          <ul>
+            <p class="text-white text-justify">Rotas otimizadas e inteligentes em aplicativo exclusivo para as suas sessões de foto</p>
+          </ul>
+        </li>
+      </div>
+      <div class="div-line-common-question"></div>
+      <div class="d-flex align-items-center justify-content-between px-3 mt-5">
+        <span class="text-white">Contrato de parceria sem exclusividade</span>
+        <img *ngIf="!question2" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(2)">
+        <img *ngIf="question2" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(2)">
+      </div>
+      <div *ngIf="question2" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
+        <li>
+          <ul>
+            <p class="text-white text-justify">Não exigimos exclusividade, mas garantimos volume! </p>
+          </ul>
+        </li>
+      </div>
+      <div class="div-line-common-question"></div>
+      <div class="d-flex align-items-center justify-content-between px-3 mt-5">
+        <span class="text-white">Benefícios exclusivos com redes parceiras:</span>
+        <img *ngIf="!question3" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(3)">
+        <img *ngIf="question3" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(3)">
+      </div>
+      <div *ngIf="question3" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
+        <li>
+          <ul>
+            <p class="text-white text-justify">Cupons de desconto e outras vantagens especiais aos nossos parceiros para adquirir diversos produtos e serviços.</p>
+          </ul>
+        </li>
+      </div>
+      <div class="div-line-common-question"></div>
+      <div class="d-flex align-items-center justify-content-between px-3 mt-5">
+        <span class="text-white">Receba por publicação e garanta um ganho expressivo:</span>
+        <img *ngIf="!question4" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(4)">
+        <img *ngIf="question4" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(4)">
+      </div>
+      <div *ngIf="question4" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
+        <li>
+          <ul>
+            <p class="text-white text-justify">Quanto mais sessões = maior número de publicações! Seu recebimento conosco será mensal após emissão de NF</p>
+          </ul>
+        </li>
+      </div>
+      <div class="div-line-common-question"></div>
+      <div class="d-flex align-items-center justify-content-between px-3 mt-5">
+        <span class="text-white">Flexibilidade de horário</span>
+        <img *ngIf="!question5" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(5)">
+        <img *ngIf="question5" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(5)">
+      </div>
+      <div *ngIf="question5" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
+        <li>
+          <ul>
+            <p class="text-white text-justify">Aqui você define seus horários e escolhe os dias e horários de sua preferência. Quanto mais horários liberar,
+              mais sessões de fotos poderá receber.</p>
+          </ul>
+        </li>
+      </div>
+      <div class="div-line-common-question"></div>
+      <div class="d-flex align-items-center justify-content-between px-3 mt-5">
+        <span class="text-white">Premiações em dinheiro com o programa Indica Aí</span>
+        <img *ngIf="!question6" src="../../../assets/icons/some.svg" height="20" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(6)">
+        <img *ngIf="question6" src="../../../assets/icons/times.svg" height="18" style="cursor: pointer;" class="animate__animated animate__rotateIn"
+             (click)="openQuestion(6)">
+      </div>
+      <div *ngIf="question6" class="animate__animated animate__fadeInUp d-flex mt-3 px-3">
+        <li>
+          <ul>
+            <p class="text-white text-justify">No programa de indicações da imoveistock você amplia seus ganhos! Mais uma forma de obter uma renda extra
+              indicando imóveis para venda e locação.</p>
+          </ul>
+        </li>
+      </div>
+      <div class="div-line-common-question"></div>
     </div>
+  </div>
 </section>
