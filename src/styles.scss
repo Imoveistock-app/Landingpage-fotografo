@@ -62,8 +62,10 @@ input:focus {
 
 .bg-header {
     background-image: url(./assets/image/img-header.png) !important;
-    background-repeat: no-repeat !important;
-    background-size: cover !important;
+  background-position: left !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  height: 90vh !important;
 }
 
 .navbarCustom {
@@ -105,7 +107,7 @@ input:focus {
     border-radius: 5px !important;
     padding: 49px 69px 49px 69px !important;
     max-width: 476px !important;
-    max-height: 642px !important;
+    max-height: 730px !important;
     margin-top: 40px !important;
 }
 
@@ -539,7 +541,7 @@ input:focus {
         top: 0rem;
     }
 
- 
+
     .col-camera-men {
         padding: 1rem 0rem;
     }
