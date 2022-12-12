@@ -50,7 +50,8 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
     ToastrModule.forRoot(),
     NgxPageScrollCoreModule,
     NgxPageScrollModule,
-    HttpClientModule
+    HttpClientModule,
+    ToastrModule.forRoot(),
   ],
   providers: [
     UserService
