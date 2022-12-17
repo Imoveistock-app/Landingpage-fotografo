@@ -13,6 +13,8 @@ export class CommonQuestionsComponent implements OnInit {
   question4: boolean = false;
   question5: boolean = false;
   question6: boolean = false;
+  question7: boolean = false;
+  question8: boolean = false;
 
   constructor() { }
 
@@ -54,6 +56,18 @@ export class CommonQuestionsComponent implements OnInit {
       this.question6 = true;
     } else {
       this.question6 = false;
+    }
+
+    if(value === 7 && this.question7 === false) {
+      this.question7 = true;
+    } else {
+      this.question7 = false;
+    }
+
+    if(value === 8 && this.question8 === false) {
+      this.question8 = true;
+    } else {
+      this.question8 = false;
     }
   }
 

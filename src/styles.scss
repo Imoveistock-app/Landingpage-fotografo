@@ -88,6 +88,10 @@ input:focus {
     padding-bottom: 200px !important;
 }
 
+.bl-gray{
+    border-left: 1px solid gray;
+}
+
 .card-left-about {
     width: 522px !important;
 }
@@ -375,7 +379,7 @@ input:focus {
 }
 
 .col-camera-men {
-    padding: 17rem 4rem;
+    padding: 17rem 4rem 4rem;
 }
 
 .w-fit {
@@ -503,7 +507,7 @@ input:focus {
 // GALLERY-VIEW
 .section-gallery-view {
     background: #231F20;
-    padding: 10rem 0;
+    padding: 0;
 }
 
 
@@ -543,7 +547,9 @@ input:focus {
     background-repeat: no-repeat !important;
 }
 
-
+.col-photos-sub:nth-child(1){
+    padding: 0 10% 0 10%;
+}
 
 @media(max-width: 1233px) {
     .row-important-image {
@@ -561,10 +567,11 @@ input:focus {
 
     .card-info-header {
         background-color: #542FDF !important;
-        max-width: 622px;
         padding: 56px 48px;
+        width: 100%;
         position: relative;
-        top: 0rem;
+        top: 0;
+        max-width: 100%;
     }
 
     .pop-up {
@@ -631,6 +638,11 @@ input:focus {
     .swiper-button-next {
         display: none !important;
     }
+    .col-photos-sub:nth-child(1){
+        padding-left: 5% !important;
+        padding-right: 0 !important;
+    }
+    
 
     .col-lg-12 {
         padding-right: 0px;
@@ -677,7 +689,7 @@ input:focus {
 
 
     .col-camera-men {
-        padding: 1rem 0rem;
+        padding: 6rem 0rem;
     }
 
     .imgs {
@@ -705,10 +717,11 @@ input:focus {
     // HEADER
     .card-info-header {
         background-color: #542FDF !important;
-        max-width: 622px;
-        padding: 56px 48px;
+        max-width: 100%;
+        width: 100%;
+        padding: 21px 48px;
         position: relative;
-        top: 0rem;
+        top: 9rem;
     }
 
     .pop-up {
@@ -716,7 +729,6 @@ input:focus {
         position: relative;
     }
 
-    .custom-content-header {}
 
     .important-img-text-mobile {
         display: block !important;
@@ -936,6 +948,7 @@ input:focus {
     }
 
     .card-header {
+        background-color: white;
         position: absolute !important;
         bottom: 0px !important;
         margin: 0 !important;
