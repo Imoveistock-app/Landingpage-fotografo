@@ -88,8 +88,12 @@ input:focus {
     padding-bottom: 200px !important;
 }
 
-.bl-gray{
+.bl-gray {
     border-left: 1px solid gray;
+}
+
+.border-bottom-none{
+    border-bottom: 0px !important;
 }
 
 .card-left-about {
@@ -547,7 +551,7 @@ input:focus {
     background-repeat: no-repeat !important;
 }
 
-.col-photos-sub:nth-child(1){
+.col-photos-sub:nth-child(1) {
     padding: 0 10% 0 10%;
 }
 
@@ -638,11 +642,12 @@ input:focus {
     .swiper-button-next {
         display: none !important;
     }
-    .col-photos-sub:nth-child(1){
+
+    .col-photos-sub:nth-child(1) {
         padding-left: 5% !important;
         padding-right: 0 !important;
     }
-    
+
 
     .col-lg-12 {
         padding-right: 0px;
@@ -679,17 +684,8 @@ input:focus {
         justify-content: center !important;
     }
 
-    .card-info-header {
-        background-color: #542FDF !important;
-        width: 100%;
-        max-width: 100%;
-        padding: 56px 48px;
-        top: 0rem;
-    }
-
-
     .col-camera-men {
-        padding: 6rem 0rem;
+        padding: 2rem 0rem;
     }
 
     .imgs {
@@ -721,7 +717,7 @@ input:focus {
         width: 100%;
         padding: 21px 48px;
         position: relative;
-        top: 9rem;
+        top: 0;
     }
 
     .pop-up {
@@ -832,7 +828,7 @@ input:focus {
     .card-form-register-header {
         background-color: white !important;
         border-radius: 5px !important;
-        padding: 44px !important;
+        padding: 44px 44px 0 !important;
         max-width: 624px !important;
         margin-top: 0px !important;
     }
@@ -950,7 +946,7 @@ input:focus {
     .card-header {
         background-color: white;
         position: absolute !important;
-        bottom: 0px !important;
+        bottom: 8% !important;
         margin: 0 !important;
     }
 
@@ -959,21 +955,55 @@ input:focus {
     }
 
 
-// GALLERY-VIEW
-.partner-img-3 {
-    background-image: url(./assets/image/room.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 263px;
+    // GALLERY-VIEW
+    .partner-img-3 {
+        background-image: url(./assets/image/room.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 263px;
+    }
+
+    .partner-img-4 {
+        background-image: url(./assets/image/socks.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 263px;
+    }
+
 }
 
-.partner-img-4 {
-    background-image: url(./assets/image/socks.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 263px;
+@media (max-width: 450px) {
+    .card-header div {
+        top: 62px !important;
+    }
+    .fisrst-title-about{
+        padding-top: 0rem !important;
+    }
 }
 
+@media (max-width: 450px) {
+    .card-header div {
+        top: 82px !important;
+    }
+    .fisrst-title-about{
+        padding-top: 3rem !important;
+    }
+    .text-gallery{
+        margin-top: 0 !important;
+    }
+    .section-import{
+        height: 808px;
+    }
+    .card-illustration-down {
+        width: 100% !important;
+        height: 386px !important;
+    }
+    .col-photos-sub:nth-child(1) {
+        padding-left: 0% !important;
+        padding-right: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
 }
