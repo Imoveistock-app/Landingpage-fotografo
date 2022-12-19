@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { ToastrService } from 'ngx-toastr';
+
 import { UserRegisterRequestDto } from '../../dtos/user-register-request.dto';
 import { UserService } from '../../services/user.service';
+import {ToastrService} from "ngx-toastr";
+import {ProfileService} from "../../services/profile.service";
 
 @Component({
   selector: 'app-header',
@@ -12,13 +14,14 @@ import { UserService } from '../../services/user.service';
 export class HeaderComponent implements OnInit {
 
   form: FormGroup;
-  request?: UserRegisterRequestDto;
+  request!: UserRegisterRequestDto;
 
-
+  response: any;
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService,
-    private toastrService: ToastrService
+    private ToastrService: ToastrService,
+    private profileService: ProfileService
   ) {
     this.form = this.formBuilder.group({
       name: ['', [Validators.required]],
@@ -26,10 +29,21 @@ export class HeaderComponent implements OnInit {
       cpf: ['', [Validators.required]],
       phone: ['', [Validators.required]],
       termsAndPolicy: ['', [Validators.requiredTrue]]
-    })
+    });
   }
 
   ngOnInit(): void {
+
+    this.profileService.list().subscribe(
+      success => {
+        for (let i = 0; i < success.length; i++) {
+          if (success[i].name === 'indicacao') {
+            this.response = success[i]._id
+          }
+        }
+      },
+      error => { console.log(error) }
+    )
   }
 
   submit() {
@@ -40,19 +54,18 @@ export class HeaderComponent implements OnInit {
       email: this.form.controls['email'].value,
       name: this.form.controls['name'].value,
       phone: `+55${this.form.controls['phone'].value}`,
-      profileId: 'fc68f468-9b93-4486-a92c-8d096f698987'
+      profileId: this.response
     }
 
     this.userService.register(this.request).subscribe(
       success => {
-        this.toastrService.success('Usuário cadastrado com sucesso!', '', { progressBar: true });
+        this.ToastrService.success('Cadastrado enviado sucesso!', '', { progressBar: true });
         this.form.reset();
       },
       error => {
-        this.toastrService.error('Erro ao cadastrar usuário', '', { progressBar: true });
+        this.ToastrService.error('Erro ao cadastrar ', '', { progressBar: true });
         console.log(error)
       }
     )
   }
-
 }

@@ -6,12 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
+  
+  year: number = new Date().getFullYear();
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-  goHeader() {
+
+  goTop() {
     window.scroll({
       top: 0,
       left: 0,

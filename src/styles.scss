@@ -47,6 +47,7 @@ input:focus {
     box-shadow: 0 0 0 0 !important;
     outline: none !important;
 }
+
 .row {
     margin-right: 0 !important;
     margin-left: 0 !important;
@@ -62,10 +63,10 @@ input:focus {
 
 .bg-header {
     background-image: url(./assets/image/img-header.png) !important;
-  background-position: left !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  height: 90vh !important;
+    background-position: left !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 1100px !important;
 }
 
 .navbarCustom {
@@ -87,6 +88,14 @@ input:focus {
     padding-bottom: 200px !important;
 }
 
+.bl-gray {
+    border-left: 1px solid gray;
+}
+
+.border-bottom-none{
+    border-bottom: 0px !important;
+}
+
 .card-left-about {
     width: 522px !important;
 }
@@ -99,14 +108,15 @@ input:focus {
 
 
 .custom-content-header {
-    min-height: calc(79vh - 117px) !important;
+    min-height: calc(38vh - 100px);
+    max-height: 702px !important;
 }
 
 .card-form-register-header {
     background-color: white !important;
     border-radius: 5px !important;
     padding: 49px 69px 49px 69px !important;
-    max-width: 476px !important;
+    max-width: 624px !important;
     max-height: 730px !important;
     margin-top: 40px !important;
 }
@@ -203,6 +213,14 @@ input:focus {
 
 .text-align-right {
     text-align: -webkit-right;
+}
+
+.max-w-1700 {
+    max-width: 1700px;
+}
+
+.d-grid {
+    display: grid;
 }
 
 /* fonts */
@@ -356,20 +374,24 @@ input:focus {
 }
 
 .card-illustration-down {
-    background-image: url(./assets/image/card-asian-men.png);
+    background-image: url(./assets/image/block-blue.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 506px;
     height: 400px;
 }
 
 .col-camera-men {
-    padding: 17rem 4rem;
+    padding: 17rem 4rem 4rem;
 }
 
 .w-fit {
     width: fit-content;
+}
+
+.h-fit {
+    height: fit-content;
 }
 
 .icon-camera {
@@ -380,6 +402,10 @@ input:focus {
 
 .border-5 {
     border-radius: 5px;
+}
+
+.border-100 {
+    border-radius: 100px;
 }
 
 // CARD-PHOTO
@@ -420,6 +446,7 @@ input:focus {
 // CARD-SWIPER
 .card-swiper {
     padding: 28px 30px;
+    height: 360px;
 }
 
 .face-card {
@@ -435,6 +462,10 @@ input:focus {
 
 .text-blue {
     color: #542FDF !important;
+}
+
+.text-darkblue {
+    color: #1D263A !important;
 }
 
 .border-08 {
@@ -462,6 +493,7 @@ input:focus {
 .top-48 {
     top: 58px;
 }
+
 .top-131 {
     top: 131px;
 }
@@ -476,11 +508,41 @@ input:focus {
     display: none;
 }
 
+// GALLERY-VIEW
+.section-gallery-view {
+    background: #231F20;
+    padding: 0;
+}
+
+
+.partner-big-img {
+    height: 573px;
+}
+
+.partner-img-3 {
+    background-image: url(./assets/image/room.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+}
+
+.partner-img-4 {
+    background-image: url(./assets/image/socks.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 263px;
+}
+
+
+.block-blue {
+    max-width: 243px;
+    height: 214px;
+    background-color: #542FDF;
+}
+
 // INFO-CARD
-
-
-
-
 .bg-paisage {
     background-image: url(./assets/image/img-card-page.png);
     background-size: cover !important;
@@ -489,20 +551,109 @@ input:focus {
     background-repeat: no-repeat !important;
 }
 
+.col-photos-sub:nth-child(1) {
+    padding: 0 10% 0 10%;
+}
 
+@media(max-width: 1233px) {
+    .row-important-image {
+        display: block !important;
+    }
 
+    // HEADER
+    .bg-header {
+        background-image: url(./assets/image/img-header.png) !important;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 1400px !important;
+    }
 
+    .card-info-header {
+        background-color: #542FDF !important;
+        padding: 56px 48px;
+        width: 100%;
+        position: relative;
+        top: 0;
+        max-width: 100%;
+    }
+
+    .pop-up {
+        top: -170px;
+        position: relative;
+    }
+
+    .custom-content-header {
+        margin-top: 10rem !important;
+        display: block !important;
+        flex-direction: column-reverse !important;
+    }
+
+    .col-full {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin: 1rem 0 !important;
+        text-align: -webkit-center;
+    }
+
+    // IMPORT-IMG
+    .card-illustration-down,
+    .card-illustration-top {
+        width: 100% !important;
+        height: 833px !important;
+    }
+
+    .row-import {
+        padding: 0 13%;
+    }
+
+    // GALLERY-VIEW
+
+    .partner-img-3 {
+        background-image: url(./assets/image/room.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 463px;
+    }
+
+    .partner-img-4 {
+        background-image: url(./assets/image/socks.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 463px;
+    }
+
+    // CAR-INFO
+    .bg-paisage {
+        background-image: url(./assets/image/img-card-page.png);
+        background-size: cover !important;
+        height: 896px;
+        background-position: center;
+        background-repeat: no-repeat !important;
+    }
+}
 
 @media (max-width: 991px) {
 
     // tools
-    .swiper-button-prev, .swiper-button-next {
+    .swiper-button-prev,
+    .swiper-button-next {
         display: none !important;
     }
-    .col-lg-12{
+
+    .col-photos-sub:nth-child(1) {
+        padding-left: 5% !important;
+        padding-right: 0 !important;
+    }
+
+
+    .col-lg-12 {
         padding-right: 0px;
         padding-left: 0px;
     }
+
     .row-block {
         display: block !important;
     }
@@ -533,24 +684,17 @@ input:focus {
         justify-content: center !important;
     }
 
-    .card-info-header {
-        background-color: #542FDF !important;
-        width: 100%;
-        max-width: 100%;
-        padding: 56px 48px;
-        top: 0rem;
-    }
-
-
     .col-camera-men {
-        padding: 1rem 0rem;
+        padding: 2rem 0rem;
     }
 
     .imgs {
         height: auto !important;
         max-width: 100% !important;
+        padding: 0 15px;
     }
-    .img-gallery-smal{
+
+    .img-gallery-smal {
         display: block !important;
     }
 
@@ -561,18 +705,36 @@ input:focus {
     .pop-up-mobile {
         display: block;
         position: absolute;
-        top: -294px;
+        top: -585px;
         right: 4%;
         z-index: 10;
     }
 
+    // HEADER
+    .card-info-header {
+        background-color: #542FDF !important;
+        max-width: 100%;
+        width: 100%;
+        padding: 21px 48px;
+        position: relative;
+        top: 0;
+    }
+
+    .pop-up {
+        top: -170px;
+        position: relative;
+    }
+
+
     .important-img-text-mobile {
         display: block !important;
     }
+
     .card-illustration-top {
         display: none !important;
 
     }
+
     .card-illustration-down {
         position: relative;
         width: 100%;
@@ -582,15 +744,18 @@ input:focus {
     .important-img-text {
         display: none !important;
     }
-    .btn-submit-register{
+
+    .btn-submit-register {
         display: none !important;
     }
+
     .swiper-pagination-bullets.swiper-pagination-horizontal {
         position: absolute;
         top: 0 !important;
         left: 61%;
         width: 100px;
     }
+
     .card-sub-with-us {
         background: #542FDF;
         text-align: center;
@@ -609,19 +774,17 @@ input:focus {
     }
 
 
-    .header-component-customer {
-        height: fit-content !important;
-    }
-    .bg-sub-with-us{
+    .bg-sub-with-us {
         background: none;
         height: 0;
     }
-    .img-sub-with-us{
+
+    .img-sub-with-us {
         display: block !important;
         margin-bottom: 200px;
     }
 
-    .block-blue{
+    .block-blue {
         max-width: 367px;
         margin-top: 11%;
         height: 214px;
@@ -656,33 +819,17 @@ input:focus {
         height: 30px !important;
     }
 
-    .bg-header-mobile {
-        background-image: url(./assets/image/img-header.png) !important;
-        background-position: center !important;
-        background-repeat: no-repeat !important;
-        background-size: cover !important;
-        min-height: 33vh !important;
-        width: 100% !important;
-    }
-    .why-photograph-text{
+
+    .why-photograph-text {
         margin: 0 3rem !important;
-    }
-
-    .bg-header {
-        background-image: none !important;
-    }
-
-    .custom-content-header {
-        flex-direction: column-reverse !important;
-        padding: 0 !important;
     }
 
 
     .card-form-register-header {
         background-color: white !important;
         border-radius: 5px !important;
-        padding: 37px 20px 37px 20px !important;
-        max-width: 476px !important;
+        padding: 44px 44px 0 !important;
+        max-width: 624px !important;
         margin-top: 0px !important;
     }
 
@@ -753,19 +900,110 @@ input:focus {
         margin-top: 100px !important;
         padding-top: 100px !important;
         padding-bottom: 100px !important;
-
     }
-}
 
-@media(max-width: 1233px) {
-    .row-important-image {
+    // IMPORT-IMG
+    .card-illustration-down {
+        width: 100% !important;
+        height: 291px !important;
+    }
+
+    // CARD-SWIPER
+    .row-cards {
         display: block !important;
     }
 
-    .col-full {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin: 1rem 0 !important;
-        text-align: -webkit-center;
+
+
+}
+
+
+@media (max-width: 600px) {
+
+    // HEADER
+    .pop-up-mobile {
+        display: block;
+        position: absolute;
+        top: -326px;
+        right: 5%;
+        z-index: 10;
+    }
+
+    .bg-header-mobile {
+        display: block;
+        background-image: url(./assets/image/img-header.png) !important;
+        background-position: left !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        height: 230px !important;
+    }
+
+    .bg-header {
+        background-image: none !important;
+        height: 1050px !important;
+    }
+
+    .card-header {
+        background-color: white;
+        position: absolute !important;
+        bottom: 8% !important;
+        margin: 0 !important;
+    }
+
+    .custom-content-header {
+        margin-top: -3rem !important;
+    }
+
+
+    // GALLERY-VIEW
+    .partner-img-3 {
+        background-image: url(./assets/image/room.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 263px;
+    }
+
+    .partner-img-4 {
+        background-image: url(./assets/image/socks.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 263px;
+    }
+
+}
+
+@media (max-width: 450px) {
+    .card-header div {
+        top: 62px !important;
+    }
+    .fisrst-title-about{
+        padding-top: 0rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    .card-header div {
+        top: 82px !important;
+    }
+    .fisrst-title-about{
+        padding-top: 3rem !important;
+    }
+    .text-gallery{
+        margin-top: 0 !important;
+    }
+    .section-import{
+        height: 808px;
+    }
+    .card-illustration-down {
+        width: 100% !important;
+        height: 386px !important;
+    }
+    .col-photos-sub:nth-child(1) {
+        padding-left: 0% !important;
+        padding-right: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
     }
 }
