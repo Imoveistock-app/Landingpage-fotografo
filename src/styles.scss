@@ -92,7 +92,7 @@ input:focus {
     border-left: 1px solid gray;
 }
 
-.border-bottom-none{
+.border-bottom-none {
     border-bottom: 0px !important;
 }
 
@@ -368,7 +368,7 @@ input:focus {
     background-image: url(./assets/image/asian-couple.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 506px;
     height: 400px;
 }
@@ -450,11 +450,31 @@ input:focus {
 }
 
 .face-card {
-    background-color: #01FF5F;
-    padding: 2rem;
+    height: 100px;
+    width: 100px;
     border-radius: 10rem;
-    width: fit-content;
 }
+
+.person1 {
+    background-image: url(./assets/image/person1.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.person2 {
+    background-image: url(./assets/image/person2.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.person3 {
+    background-image: url(./assets/image/person3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
 
 .text-purple {
     color: #4C3778;
@@ -978,7 +998,8 @@ input:focus {
     .card-header div {
         top: 62px !important;
     }
-    .fisrst-title-about{
+
+    .fisrst-title-about {
         padding-top: 0rem !important;
     }
 }
@@ -987,19 +1008,24 @@ input:focus {
     .card-header div {
         top: 82px !important;
     }
-    .fisrst-title-about{
+
+    .fisrst-title-about {
         padding-top: 3rem !important;
     }
-    .text-gallery{
+
+    .text-gallery {
         margin-top: 0 !important;
     }
-    .section-import{
+
+    .section-import {
         height: 808px;
     }
+
     .card-illustration-down {
         width: 100% !important;
         height: 386px !important;
     }
+
     .col-photos-sub:nth-child(1) {
         padding-left: 0% !important;
         padding-right: 0 !important;
