@@ -199,6 +199,14 @@ input:focus {
 }
 
 // tool´S
+.font-size-64 {
+    font-size: 64px;
+  }
+  
+.line-62 {
+    line-height: 62px !important;
+  }
+  
 .img-partner-mobile {
     display: none !important;
 }
@@ -1089,17 +1097,6 @@ input:focus {
     .fisrst-title-about {
         padding-top: 0rem !important;
     }
-}
-
-@media (max-width: 450px) {
-    .card-header div {
-        top: 82px !important;
-    }
-
-    .fisrst-title-about {
-        padding-top: 3rem !important;
-    }
-
     .text-gallery {
         margin-top: 0 !important;
     }
