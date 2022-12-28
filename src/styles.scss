@@ -202,11 +202,11 @@ input:focus {
 .font-size-64 {
     font-size: 64px;
   }
-  
+
 .line-62 {
     line-height: 62px !important;
   }
-  
+
 .img-partner-mobile {
     display: none !important;
 }
@@ -506,6 +506,9 @@ input:focus {
     top: 0 !important;
     left: 87%;
     width: 100px;
+}
+.space-mobile {
+  margin-top: 30px !important;
 }
 
 .swiper-pagination-bullet {
@@ -1031,6 +1034,7 @@ input:focus {
 
 
 }
+
 
 
 @media (max-width: 600px) {
