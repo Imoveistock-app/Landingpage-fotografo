@@ -10,7 +10,7 @@ import {Subscription} from "rxjs";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'landing-page-proprietario1';
+  title = 'imoveistock Fotógrafo';
 
   private popupOpenSubscription!: Subscription;
   private popupCloseSubscription!: Subscription;
