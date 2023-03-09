@@ -2,6 +2,7 @@ import { Component, Inject, OnInit } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import { PageScrollService } from 'ngx-page-scroll-core';
 import { Router } from '@angular/router';
+import {environment} from "../../../environments/environment.prod";
 
 @Component({
   selector: 'app-navbar',
@@ -35,5 +36,14 @@ export class NavbarComponent implements OnInit {
       scrollTarget: '.'
     });
   }
+
+  goLogin(){
+    window.location.href = environment.redirect.link+'/auth/login-or-register';
+  }
+
+  goVitrine(){
+    window.open(environment.redirect.vitrine, '_blank');
+  }
+
 
 }
