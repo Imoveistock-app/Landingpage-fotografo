@@ -1,34 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-white p-0 navbarCustom">
-    <a (click)="goVitrine()" class="d-flex align-items-center">
-        <div class="first-space-navbar">
-            <a class="navbar-brand"><img src="../../../assets/logo/logo-k.svg" class="img-logo"></a>
-        </div>
-        <img src="../../../assets/logo/logo-nome.svg" class="img-logo-name">
-    </a>
-    <button class="navbar-toggler mr-md-5 mr-3" type="button" data-toggle="collapse"
-        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
-        aria-label="Alterna navegação">
-        <img src="../../../assets/icons/bars.svg" height="24">
-    </button>
-
-    <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-        <ul class="navbar-nav mr-auto w-100 d-flex justify-content-end align-lg-items-center bg-white pl-3">
-            <li class="nav-item">
-                <a class="nav-link text-dark mr-3" (click)="goAbout()" pageScroll>Sobre</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link  text-dark mr-3" href=".section-sub" pageScroll>Anunciar agora</a>
-            </li>
-            <li class="nav-item">
-              <a class="text-dark nav-link mr-3" target="_blank" href="https://indike.imoveistock.com.br/">Indique </a>
-            </li>
-            <li class="nav-item dropdown mr-5">
-                <a class="nav-link dropdown-toggle d-flex  text-dark  align-items-center" href="https://imoveistock-app.vercel.app/auth/login-or-register" target="_blank" id="navbarDropdown" role="button"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <i class="bi bi-person mr-2" style="font-size: 20px;"></i>
-                    <span class="mr-2" (click)="goLogin()">Login</span>
-                </a>
-            </li>
-        </ul>
+  <a (click)="goVitrine()" class="d-flex align-items-center">
+    <div class="first-space-navbar">
+      <a class="navbar-brand"><img src="../../../assets/logo/logo-k.svg" class="img-logo"></a>
     </div>
+    <img src="../../../assets/logo/logo-nome.svg" class="img-logo-name">
+  </a>
+  <button class="navbar-toggler mr-md-5 mr-3" type="button" data-toggle="collapse"
+    data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false"
+    aria-label="Alterna navegação">
+    <img src="../../../assets/icons/bars.svg" height="24">
+  </button>
+
+  <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+    <ul class="navbar-nav mr-auto w-100 d-flex justify-content-end align-lg-items-center align-items-center-991 bg-white pl-3">
+      <li class="nav-item">
+        <a class="nav-link text-dark mr-3" (click)="goAbout()" pageScroll>Sobre</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  text-dark mr-3" href=".section-sub" pageScroll>Anunciar agora</a>
+      </li>
+      <li class="nav-item">
+        <a class="text-dark nav-link mr-3" target="_blank" href="https://indike.imoveistock.com.br/">Indique </a>
+      </li>
+      <li class="nav-item">
+        <button class="btn mr-5" id="btn-conhecer" (click)="knowApp()">Conheça o nosso app</button>
+      </li>
+    </ul>
+  </div>
 </nav>
