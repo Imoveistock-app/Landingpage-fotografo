@@ -38,11 +38,11 @@ export class NavbarComponent implements OnInit {
   }
 
   knowApp() {
-    window.open('https://imoveistock-kjeth28zd-tgt.vercel.app', '_blank')
+    window.open('https://imoveistock-app-tgt.vercel.app', '_blank')
   }
 
   goVitrine(){
-    window.open(environment.redirect.vitrine, '_blank');
+    window.open('https://vitrine-imoveistock-tgt.vercel.app/', '_blank');
   }
 
 
