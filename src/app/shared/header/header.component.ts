@@ -54,19 +54,19 @@ export class HeaderComponent implements OnInit {
       profilesIds: [ProfileClientEnum.indicacao, ProfileClientEnum.proprietario]
     }
 
-    this.modalService.open(RedirectAppModalComponent, { size: 'sm', centered: true })
-
-
-    // this.userService.register(this.request).subscribe(
-    //   success => {
-    //     this.ToastrService.success('Cadastrado enviado sucesso!', '', { progressBar: true });
-    //     this.form.reset();
-    //   },
-    //   error => {
-    //     this.ToastrService.error('Erro ao cadastrar ', '', { progressBar: true });
-    //     console.log(error)
-    //   }
-    // )
+    
+    
+    this.userService.register(this.request).subscribe(
+      success => {
+        this.ToastrService.success('Cadastrado enviado sucesso!', '', { progressBar: true });
+        this.modalService.open(RedirectAppModalComponent, { size: 'sm', centered: true })
+        this.form.reset();
+      },
+      error => {
+        this.ToastrService.error('Erro ao cadastrar ', '', { progressBar: true });
+        console.log(error)
+      }
+    )
   }
 
   openTermsModal(value: string){
