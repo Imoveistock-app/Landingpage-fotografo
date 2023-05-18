@@ -28,6 +28,7 @@ import { CookiesComponent } from './shared/cookies/cookies.component';
 import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
 import {NgcCookieConsentConfig, NgcCookieConsentModule} from "ngx-cookieconsent";
 import { AboutComponent } from './landing-page/about/about.component';
+import { RedirectAppModalComponent } from './shared/header/redirect-app-modal/redirect-app-modal.component';
 
 const cookieConfig:NgcCookieConsentConfig = {
   cookie: {
@@ -70,6 +71,7 @@ const cookieConfig:NgcCookieConsentConfig = {
     TermComponent,
     CookiesComponent,
     AboutComponent,
+    RedirectAppModalComponent
   ],
   imports: [
     BrowserModule,
