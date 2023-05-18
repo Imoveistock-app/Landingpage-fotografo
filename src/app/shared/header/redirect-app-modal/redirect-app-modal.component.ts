@@ -17,7 +17,7 @@ export class RedirectAppModalComponent implements OnInit {
 
   confirm() {
     window.open('https://imoveistock-app.vercel.app/auth/insert-tel', '_blank');
-
+    this.exit();
   }
 
   exit() {
