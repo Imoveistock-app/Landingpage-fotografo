@@ -8,6 +8,7 @@ import {ProfileService} from "../../services/profile.service";
 import {TermComponent} from "../term/term.component";
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 import {ProfileClientEnum} from "../../dtos/enum/profile-client.enum";
+import { RedirectAppModalComponent } from './redirect-app-modal/redirect-app-modal.component';
 
 @Component({
   selector: 'app-header',
@@ -53,16 +54,19 @@ export class HeaderComponent implements OnInit {
       profilesIds: [ProfileClientEnum.indicacao, ProfileClientEnum.proprietario]
     }
 
-    this.userService.register(this.request).subscribe(
-      success => {
-        this.ToastrService.success('Cadastrado enviado sucesso!', '', { progressBar: true });
-        this.form.reset();
-      },
-      error => {
-        this.ToastrService.error('Erro ao cadastrar ', '', { progressBar: true });
-        console.log(error)
-      }
-    )
+    this.modalService.open(RedirectAppModalComponent, { size: 'sm', centered: true })
+
+
+    // this.userService.register(this.request).subscribe(
+    //   success => {
+    //     this.ToastrService.success('Cadastrado enviado sucesso!', '', { progressBar: true });
+    //     this.form.reset();
+    //   },
+    //   error => {
+    //     this.ToastrService.error('Erro ao cadastrar ', '', { progressBar: true });
+    //     console.log(error)
+    //   }
+    // )
   }
 
   openTermsModal(value: string){
