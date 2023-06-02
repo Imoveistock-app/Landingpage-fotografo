@@ -632,6 +632,10 @@ input:focus {
     width: auto;
 }
 
+.cursor-pointer {
+    cursor: pointer;
+}
+
 .cursor-underline:hover{
     cursor: pointer;
     text-decoration: underline;
